@@ -1,4 +1,6 @@
 <?php
+//phpcs:ignoreFile 
+//this class is used to dump the complete database to a file when creating snapshots and uses multiple non-WordPress functions in order to imporove performance and compatibility with various servers even when dumping large databases
 /**
  * Abstract dump file: provides common interface for writing
  * data to dump files.
