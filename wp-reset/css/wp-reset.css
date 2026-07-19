@@ -1200,7 +1200,7 @@ li .pro-feature {
   text-align: center;
   background: #f8f8f8;
   margin: -16px -16px 0 -16px;
-  padding: 15px;
+  padding: 15px 15px;
 }
 
 .wpreset-pro-dialog .footer {
@@ -1210,10 +1210,22 @@ li .pro-feature {
   padding: 20px;
 }
 
+.wpreset-pro-dialog .upsell-footer-2 {
+  padding: 10px;
+  text-align: center;
+  background-color: #dd3036;
+  color: white;
+  margin: 0 -16px 0 -16px;
+}
+
+.wpreset-pro-dialog .upsell-footer-2 a {
+  color: white;
+}
+
 .wpreset-pro-dialog .logo span {
   display: block;
   font-size: 18px;
-  margin: 10px;
+  margin: 0 0 10px 0;
 }
 
 .wpreset-pro-dialog .logo span b {
@@ -1266,12 +1278,12 @@ li .pro-feature {
   color: #000;
   font-size: 18px;
   font-weight: 800 !important;
-  padding: 10px 0;
+  padding: 10px 0 0 0;
   text-align: center;
 }
 
 #wpreset-pro-table tr:last-child td {
-  padding: 20px 0 20px 0;
+  padding: 10px 0 10px 0;
   vertical-align: top;
 }
 
@@ -1310,5 +1322,17 @@ li .pro-feature {
 
 div.ui-dialog {
   position: fixed;
+}
+/* Constrain the outer dialog box container to the screen height */
+.ui-dialog {
+    max-height: 90vh; /* Adjust percentage as needed */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Force the internal content area to scroll when it overflows */
+.ui-dialog .ui-dialog-content {
+    overflow-y: auto !important;
+    flex-grow: 1;
 }
 

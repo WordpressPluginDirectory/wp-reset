@@ -3,7 +3,7 @@
   Plugin Name: WP Reset
   Plugin URI: https://wpreset.com/
   Description: Reset the entire site or just selected parts while reserving the option to undo by using snapshots.
-  Version: 2.07
+  Version: 2.08
   Requires at least: 4.0
   Requires PHP: 5.2
   Tested up to: 7.0
@@ -2243,7 +2243,7 @@ class WP_Reset
         $out .= '</tr>';
 
         $out .= '<tr class="prices">';
-        $out .= '<td class="center"><del>$39 /year</del><br><span>$59</span> <b>/lifetime</b></td>';
+        $out .= '<td class="center"><del>$59 /year</del><br><span>$59</span> <b>/lifetime</b></td>';
         $out .= '<td class="center"><del>$79 /year</del><br><span>$69</span> <b>/lifetime</b></td>';
         $out .= '<td class="center"><del>$119 /year</del><br><span>$149</span> <b>/lifetime</b></td>';
         $out .= '</tr>';
@@ -2322,7 +2322,9 @@ class WP_Reset
 
         $out .= '</table>';
 
-        $out .= '<div class="center footer"><b>100% No-Risk Money Back Guarantee!</b> If you don\'t like the plugin over the next 7 days, we will happily refund 100% of your money. No questions asked! Payments are processed by our merchant of records - <a href="https://paddle.com/" target="_blank">Paddle</a>.</div></div>';
+        $out .= '<div class="upsell-footer-2">Need the plugin only for a <b>short period of time</b>? <a class="button-buy" target="_blank" data-href-org="https://wpreset.com/buy2/?product=personal-monthly&ref=pricing-table" href="https://wpreset.com/buy2/?product=personal-monthly&ref=pricing-table"><b>Get it for ONLY $9.99</b><small> /month</small></a> &amp; cancel any time!</div>';
+
+        $out .= '<div class="footer"><b>100% No-Risk Money Back Guarantee!</b> If you don\'t like the plugin over the next 7 days, we will happily refund 100% of your money. No questions asked! Payments are processed by our merchant of records - <a href="https://paddle.com/" target="_blank">Paddle</a>.</div></div>';
 
         return $out;
     } // pro_dialog

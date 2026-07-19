@@ -4,7 +4,7 @@ Contributors: WebFactory
 Requires at least: 4.0
 Requires PHP: 5.2
 Tested up to: 7.0
-Stable tag: 2.07
+Stable tag: 2.08
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -120,6 +120,10 @@ Or if needed, upload manually;
 5. Use our 1-click backup feature before running any reset tools
 
 == Changelog ==
+
+= v2.08 =
+* 2026/07/19
+* Minor updates and fixes
 
 = v2.07 =
 * 2026/04/06

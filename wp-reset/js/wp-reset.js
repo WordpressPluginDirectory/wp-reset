@@ -790,10 +790,12 @@ jQuery(document).ready(function ($) {
     closeOnEscape: true,
   });
 
-  if (window.localStorage.getItem('wpreset_upsell_shown') != 'true') {
+  // show upsell popup every 3 months
+  if (window.localStorage.getItem('wpreset_upsell_timestamp') === null ||
+      (new Date().getTime() / 1000 - window.localStorage.getItem('wpreset_upsell_timestamp')) > (86400 * 90)) {
+    window.localStorage.setItem('wpreset_upsell_timestamp', Math.round(new Date().getTime() / 1000));
+
     open_upsell('welcome');
-    window.localStorage.setItem('wpreset_upsell_shown', 'true');
-    window.localStorage.setItem('wpreset_upsell_shown_timestamp', new Date().getTime());
   }
 
   if (window.location.hash == '#open-pro-dialog') {
